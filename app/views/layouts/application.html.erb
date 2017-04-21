@@ -9,6 +9,11 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div>
+      <%= render "common/varbar" %>
+      <%= render "common/flashes"%>
+      <%= yield %>
+    </div>
+    <%= render "common/footer" %>
   </body>
 </html>
