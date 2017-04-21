@@ -1,7 +1,10 @@
 <h1> Edit the job </h1>
 
-<% simple_form_for [:admin, @job] do |f| %>
+<%= simple_form_for [:admin, @job] do |f| %>
 <%= f.input :title %>
 <%= f.input :description %>
+<%= f.input :wage_lower_bound, :label => "the lower wage:" %>
+<%= f.input :wage_upper_bound, :label => "the upper wage:" %>
+<%= f.input :contact_email %>
 <%= f.submit "Submit"%>
 <% end %>
