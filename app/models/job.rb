@@ -17,5 +17,7 @@ class Job < ApplicationRecord
     self.save
   end
 
+  has_many :resumes
+
 #  validates :wage_upper_bound, numericality: { greate_then: wage_lower_bound }
 end
